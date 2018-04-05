@@ -67,9 +67,11 @@ bool Album::EstaLleno(int n, int n_en_album){
 int main(){ 
   srand(time(0));
   Album A(660);
-  int b = A.EnAlbum();
-  while (A.EstaLleno(660, b) == false){
-    A.CompraSobre(5);
-    A.Status();
+  int b = A.EnAlbum(n_en_album);
+  while (A.EstaLleno(660, n_en_album) == false){
+    for (int i = b; i <= b; i++){
+      A.CompraSobre(5);
+      A.Status();
+    }
   }
 }
